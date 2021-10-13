@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* 2021.10.08 */
+
+/* 가운데 영역 */
+.container{max-width: 1280px; margin: 0 auto;}
+
+/* nav */
+#nav{width: 100%;height: 100px; margin-top: -100px; background: linear-gradient(to bottom, rgba(255, 255 , 255, 1) 100px,rgba(250, 250 , 250, 1) 100px); position: fixed; z-index: 9999; overflow: hidden; transition: all 0.4s;}
+#nav.active{height: 200px; transition: all 0.4s; overflow: visible; background: linear-gradient(to bottom, rgba(255, 255 , 255, 1) 100px,rgba(250, 250 , 250, 1) 100px);}
+#nav.hide {margin-top: -200px;transition: all 0.9s; background: rgba(255, 255 , 255, 1);overflow: hidden;}
+
+.nav{height: 100px; display: flex; justify-content: space-between; line-height: 100px; position: relative;}
+
+.nav .logo{margin-top: 10px;}
+.nav .logo img{width: 86px;height: 32px;}
+
+.nav .menu{}
+.nav .menu > ul{display: flex;}
+.nav .menu > ul > li{}
+.nav .menu > ul > li > a{font-weight: 500;font-size: 20px; padding: 0 30px; display: block; transition: all 0.4s; }
+.nav .menu > ul > li.active > a{color: #e83953;}
+.nav .menu > ul > li.active > a > em::after{content: ""; position: absolute;top: 65px;left: 50%; transform: translateX(-50%); width: 0;height: 0; border-top: 10px solid red;border-left: 10px solid transparent;border-right: 10px solid transparent;}
+.nav .menu > ul > li > a > em{position: relative;}
+
+.sub_menu{width: 100%;display: flex; justify-content: center; position: absolute; top: 100%;left: 0;}
+.sub_menu li{ display: none; margin: 0 30px;}
+.sub_menu li a{color: #000; font-size: 20px;}
+.sub_menu li a em{}
+.sub_menu li:hover a{color: #e83953;}
+
+.nav .right_menu{}
+.nav .right_menu ul{display: flex;}
+.nav .right_menu ul li{}
+.nav .right_menu ul li a{font-size: 20px; position: relative;}
+.nav .right_menu ul li a::before{content: ""; width: 1px; height: 7px; background: #545555; position: absolute; top:50%; right: 0; transform: translateY(-50%);}
+.nav .right_menu ul li:nth-child(3) a::before,
+.nav .right_menu ul li:nth-child(4) a::before{width: 0;height: 0;}
+.nav .right_menu ul li a i{margin: 0 5px;}
+.nav .right_menu ul li:last-child a i{margin: 0 20px 0 30px;}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+/* footer */
+.footer{height: 200px; display: flex; justify-content: space-between; align-items: center; }
+.footer .text_box{}
+.footer .text_box ul{display: flex; margin-bottom: 45px;}
+.footer .text_box ul li{margin-right: 30px;position: relative;}
+.footer .text_box ul li::before{content: "";width: 2px;height: 9px; background: #484848; position: absolute; top: 50%;right: -15px; transform: translateY(-50%);}
+.footer .text_box ul li:last-child:before{width: 0;height: 0;}
+.footer .text_box ul li a{}
+.footer .text_box ul li a em{font-size: 16px; font-weight: 500;}
+.footer .text_box p{font-size: 16px; font-weight: 400; }
+
+
+.footer .logo_box{}
+.footer .logo_box img{ object-fit: contain; margin: 10px 0;}
+.footer .logo_box img:nth-child(1){width: 230px;height: 44px; display: block;}
+.footer .logo_box img:nth-child(2){width: 230px;height: 80px; }

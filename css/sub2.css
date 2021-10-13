@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body{font-family: 'Noto Sans KR', sans-serif; margin-top: 100px;}
+/* 2021.10.11 */
+
+/* 레이아웃 */
+#header{height: 400px; background: url(../img/supplies/banner_back.jpg) no-repeat center / cover; background-attachment: fixed;}
+#main{}
+#section1{height: 500px; background: #f1f1f1; margin-top: 150px;}
+#section2{height: 500px; background: #fff;}
+#section3{height: 500px; background: #f1f1f1; margin-bottom: 150px;}
+
+/* 가운데 영역 */
+.container{max-width: 1280px; margin: 0 auto;}
+
+/* banner */
+.banner{}
+.banner h2{font-size: 80px;font-weight: bold; color: #fff; text-align: center; line-height: 400px;}
+
+
+/* section1 */
+.section{height: 500px; display: flex; justify-content: center; align-items: center; }
+.section .img_box{width: 610px;height: 350px; position: relative; border-radius: 30px;}
+.section .img_box::before{content: ""; width: 100%;height: 100%; background: rgba(0, 0, 0, 0.3); position: absolute; top: 0;left: 0;}
+
+.section .img_box a{}
+.section .img_box a h3{display: inline-block; font-size: 30px;font-weight: 600; color: #fff;width: 100%;text-align: center; text-transform: uppercase; position: absolute; top: 50%;left: 50%; transform: translate(-50%,-50%);}
+.section .img_box a h3::before{content: "";width: 100px;height: 3px;background: #fff; position: absolute;bottom: -10px;left: 50%; transform: translateX(-50%);}
+.section .img_box a h3:hover:before{width: 150px; background: #d93a51; transition: all 0.4s;}
+
+.section .text_box{width: 350px;height: 350px; position: relative;}
+.section .text_box ul{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.section .text_box ul li{margin: 10px 0; }
+.section .text_box ul li a{width: 100px;display: inline-block; text-align: center;}
+.section .text_box ul li a em{font-size: 20px;font-weight: 600;text-transform: uppercase; }
+.section .text_box ul li i{font-size: 20px;font-weight: 600; color: #d93a51 ;}
+.section .text_box ul li:hover i{transform: translateX(10px); transition: all 0.4s;}
+
+#section1 .img_box{background: url(../img/supplies/section1.jpg) no-repeat center / cover;}
+#section2 .img_box{background: url(../img/supplies/section2.jpg) no-repeat center / cover;}
+#section3 .img_box{background: url(../img/supplies/section3.jpg) no-repeat center / cover;}
+
+
+
+
+
+
