@@ -5,7 +5,7 @@ body{font-family: 'Noto Sans KR', sans-serif; margin-top: 100px;}
 
 /* 레이아웃 */
 #header{height: 400px; background: url(../img/news/banner_back.jpg) no-repeat bottom / cover; background-attachment: fixed;}
-#section1{}
+#section1{margin-bottom: 100px;}
 
 /* 가운데 영역 */
 .container{max-width: 1280px; margin: 0 auto;}

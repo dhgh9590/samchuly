@@ -11,7 +11,7 @@
 
 .nav{height: 100px; display: flex; justify-content: space-between; line-height: 100px; position: relative;}
 
-.nav .logo{margin-top: 10px;}
+.nav .logo{margin: 10px 0 0 20px;}
 .nav .logo img{width: 86px;height: 32px;}
 
 .nav .menu{}
@@ -39,10 +39,14 @@
 .nav .right_menu ul li:last-child a i{margin: 0 20px 0 30px;}
 
 
+@media (max-width : 1023px){
+    .nav .menu > ul > li > a{padding: 0 15px; }
+}
 
 
+@media (max-width : 767px){
 
-
+}
 
 
 
